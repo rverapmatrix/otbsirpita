@@ -46,10 +46,10 @@
             
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="<?php echo base_url().'listausuarios'; ?>" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
               <p>
-                Widgets
+                Usuarios
                 <span class="right badge badge-danger">New</span>
               </p>
             </a>
