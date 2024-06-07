@@ -10,15 +10,22 @@ class UsuarioModel extends Model
 
     protected $useAutoIncrement = true;
 
-    protected $returnType     = 'object';
+    protected $returnType     = 'array';
     //protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['usuario', 'password','nombre','apellidoPat'];
+    protected $allowedFields = ['usuario', 'password','nombre','apellidoPat','apellidoMat','rol','celular','direccion','estado'];
 
 
     public function getUsuario($usuarioEnviado){
         return $this->where('usuario',$usuarioEnviado)->first();
     }
+
+    /*public function getIdUsuarioUltimo()
+    {
+        return $this->orderBy('idUsuario', 'DESC')->first();
+    }*/
+
+
     
 }
 
